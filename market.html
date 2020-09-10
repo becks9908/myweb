@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOCKS</title>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+      <script src="no1.js"></script>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.stock.min.js"></script>
+<script type="text/javascript">
+window.onload = function () {
+  var dataPoints1 = [], dataPoints2 = [], dataPoints3 = [];
+  var stockChart = new CanvasJS.StockChart("chartContainer",{
+    exportEnabled: true,
+    theme: "light2",
+    title:{
+      text:"StockChart with Tooltip & Crosshair Syncing"
+    },
+    charts: [{
+      toolTip: {
+        shared: true
+      },
+      axisX: {
+        lineThickness: 5,
+        tickLength: 0,
+        labelFormatter: function(e) {
+          return "";
+        },
+        crosshair: {
+          enabled: true,
+          snapToDataPoint: true,
+          labelFormatter: function(e) {
+            return ""
+          }
+        }
+      },
+      axisY2: {
+        title: "Litecoin Price",
+        prefix: "$"
+      },
+      legend: {
+        verticalAlign: "top",
+        horizontalAlign: "left"
+      },
+      data: [{
+        name: "Price (in US)",
+        yValueFormatString: "$#,###.##",
+        axisYType: "secondary",
+        type: "candlestick",
+        risingColor: "green",
+        fallingColor: "red",
+        dataPoints : dataPoints1
+      }]
+    },{
+      height: 100,
+      toolTip: {
+        shared: true
+      },
+      axisX: {
+        crosshair: {
+          enabled: true,
+          snapToDataPoint: true
+        }
+      },
+      axisY2: {
+        prefix: "$",
+        title: "US"
+      },
+      legend: {
+        horizontalAlign: "left"
+      },
+      data: [{
+        yValueFormatString: "$#,###.##",
+        axisYType: "secondary",
+        name: "US",
+        dataPoints : dataPoints2
+      }]
+    }],
+    navigator: {
+      data: [{
+        color: "grey",
+        dataPoints: dataPoints3
+      }],
+      slider: {
+        minimum: new Date(2019, 06, 01),
+        maximum: new Date(2019, 08, 01)
+      }
+    }
+  });
+  $.getJSON("https://canvasjs.com/data/docs/ltceur2018.json", function(data) {
+    for(var i = 0; i < data.length; i++){
+      dataPoints1.push({x: new Date(data[i].date), y: [Number(data[i].open), Number(data[i].high), Number(data[i].low), Number(data[i].close)], color: data[i].open < data[i].close ? "green" : "red"});;
+      dataPoints2.push({x: new Date(data[i].date), y: Number(data[i].volume_eur), color: data[i].open < data[i].close ? "green" : "red"});
+      dataPoints3.push({x: new Date(data[i].date), y: Number(data[i].close)});
+    }
+    stockChart.render();
+  });
+}
+</script>
+</head>
+<body style="background-color:rgb(47,70,110) " >
+    <center><div id="chartContainer" style="height: 400px; width: 70%;"></div></center>
+    <center><table id="fruit_table" style="height: 150px; width: 70%;">
+        <caption>今日股價</caption>
+        
+        <colgroup>
+          <col style="background:rgb(255, 255, 255)">
+          <col span="5" style="background:rgb(255, 255, 255)">
+        </colgroup>
+        
+        <thead>
+          <tr>
+            <th id="fruit_name">NAME</th>
+            <th id="fruit_price">LAST</th>
+            <th id="fruit_inventory">HIGH</th>
+            <th id="fruit_inventory">LOW</th>
+            <th id="fruit_inventory">CHG.</th>
+            <th id="fruit_inventory">VOL.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td headers="fruit_name" style="font-weight:bold;">3M</td>
+            <td headers="fruit_price">164.35</td>
+            <td headers="fruit_inventory">164.39</td>
+            <td headers="fruit_price">161.64</td>
+            <td headers="fruit_inventory "style="color:green;">+0.84%</td>
+            <td headers="fruit_inventory">1.14M</td>
+          </tr>
+          <tr>
+            <td headers="fruit_name" style="font-weight:bold;">APPLE</td>
+            <td headers="fruit_price">132.21</td>
+            <td headers="fruit_inventory">132.90</td>
+            <td headers="fruit_price">130.53</td>
+            <td headers="fruit_inventory" style="color:green;">+2.43%</td>
+            <td headers="fruit_inventory">71.37M</td>
+          </tr>
+          <tr>
+            <td headers="fruit_name" style="font-weight:bold;">CISCO</td>
+            <td headers="fruit_price">41.92</td>
+            <td headers="fruit_inventory">42.03</td>
+            <td headers="fruit_price">41.50</td>
+            <td headers="fruit_inventory" style="color:red;">-0.70%</td>
+            <td headers="fruit_inventory">9.18M</td>
+          </tr>
+        </tbody>
+      </table></center>
+</body>
+</html>
