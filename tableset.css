@@ -1,3 +1,15 @@
+.goto{
+background:    #2f466e;
+border:        2px solid #ffffff;
+border-radius: 0px;
+padding:       20px 45px;
+color:         #fbfbfb;
+display:       inline-block;
+  font-family: 'Ranchers', cursive;
+text-align:    center;
+text-shadow:   1px 1px #444444;
+}
+
 .css-table{
 		display: table;
     margin: 50px;

@@ -54,7 +54,18 @@
 .subtitlefeature_list > .item {
     width: 190px
 }
-
+@media (max-width:768px) {
+ 
+    
+    
+}
+    
+    
+    
+    
+    
+    
+    
 @media (min-width:768px) {
     .feature_card_wrap {
         width: 190px;
@@ -781,8 +792,3 @@ margin-right:auto;
     height: 300px;
     overflow:hidden;
 }
-
-
-
-
-
