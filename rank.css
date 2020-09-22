@@ -1,0 +1,32 @@
+
+
+
+
+.tdnum {
+    text-align:center;
+    display: table-cell;
+    font-size: 30px;
+    width: 300px;
+    height: 200px;
+      font-family: 'Ranchers', cursive;
+    letter-spacing: 6px;
+    font-size: 50px;  
+    border-width: thick;
+    border-bottom-style: dashed;
+    border-width: inherit;
+    border:3px  double white; 
+    position: relative;
+    table-layout: fixed;
+    float: none;
+    overflow: hidden;
+   
+}
+
+.imgg{
+    padding-left: 100px;
+    width: 200px;
+    height: 150px;
+    vertical-align: middle;
+
+    position: absolute;
+}
