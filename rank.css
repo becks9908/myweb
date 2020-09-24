@@ -6,11 +6,11 @@
     text-align:center;
     display: table-cell;
     font-size: 30px;
-    width: 300px;
-    height: 200px;
+    width:150px;
+    height: 80px;
       font-family: 'Ranchers', cursive;
     letter-spacing: 6px;
-    font-size: 50px;  
+    font-size: 20px;  
     border-width: thick;
     border-bottom-style: dashed;
     border-width: inherit;
@@ -23,9 +23,9 @@
 }
 
 .imgg{
-    padding-left: 100px;
-    width: 200px;
-    height: 150px;
+    padding-left: 50px;
+    width: 100px;
+    height: 70px;
     vertical-align: middle;
 
     position: absolute;
