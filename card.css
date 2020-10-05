@@ -1,40 +1,26 @@
-.comTitle{
+.comTitle {
     font-size: 50px;
     font-family: 'Ranchers', cursive;
     letter-spacing: 10px;
-    text-align:center;
+    text-align: center;
     line-height: 100px;
     margin: auto;
     margin-top: 30px;
     height: 100px;
-    color:#fff;
-    
+    color: #2f466e;
 }
 
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
 
-html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
-pre, a, abbr, acronym, address, big, cite,
-code, del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var, b,
-u, i, center, dl, dt, dd, ol, ul, li, fieldset,
-form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside,
-canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	}
-
-
-	*, *:before, *:after {
-		box-sizing: inherit;
-	}
-
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 
 @media (min-width:1200px) {
     .index_goods {
@@ -44,54 +30,37 @@ section, summary, time, mark, audio, video {
         display: -ms-flexbox;
         display: flex
     }
-
     .index_goods .part_l {
         width: 59.73646%;
         padding: 60px
     }
-
-
     .index_goods .g_section_title {
         letter-spacing: 1px;
         color: #333
     }
-
     .index_goods .g_section_title .section_subtitle:after {
         background-color: #295bbb
     }
-
     .index_goods .dot_list {
         color: #333
     }
-
     .index_goods .dot_list li:after {
         background-color: #295bbb
     }
-
     .index_goods .dot_list .list_title {
         color: #295bbb
     }
-
     .index_goods .dot_list .Highlight {
         color: #000
     }
 }
 
-.subtitlefeature_list > .item {
+.subtitlefeature_list>.item {
     width: 190px
 }
-@media (max-width:768px) {
- 
-    
-    
-}
-    
-    
-    
-    
-    
-    
-    
+
+@media (max-width:768px) {}
+
 @media (min-width:768px) {
     .feature_card_wrap {
         width: 190px;
@@ -108,12 +77,10 @@ section, summary, time, mark, audio, video {
         width: 190px;
         height: 240px
     }
-
     .feature_card_wrap .feature_card {
         -webkit-transform-style: preserve-3d;
         transform-style: preserve-3d
     }
-
     .feature_card_wrap:hover .feature_card {
         -webkit-transform: rotateY(180deg);
         transform: rotateY(180deg)
@@ -148,7 +115,6 @@ section, summary, time, mark, audio, video {
     height: 72px
 }
 
-
 .feature_card .feature_img {
     display: none
 }
@@ -161,11 +127,9 @@ section, summary, time, mark, audio, video {
         background: none;
         padding: 0
     }
-
     .feature_card .mb_feature_img {
         display: none
     }
-
     .feature_card .card_content {
         position: absolute;
         width: 100%;
@@ -175,15 +139,12 @@ section, summary, time, mark, audio, video {
         backface-visibility: hidden;
         margin-left: 0
     }
-
     .feature_card .feature_img {
         display: block;
         margin: 0 auto 10px;
         position: relative;
-        
     }
-
-    .feature_card  {//移動第三張
+    .feature_card {
         position: absolute;
         top: 0;
         left: 0;
@@ -204,8 +165,7 @@ section, summary, time, mark, audio, video {
     transform-style: preserve-3d
 }
 
-@media (-ms-high-contrast:none),
-screen and (-ms-high-contrast:active) {
+@media (-ms-high-contrast:none), screen and (-ms-high-contrast:active) {
     .card_frount .feature_img {
         max-height: 116px
     }
@@ -223,7 +183,6 @@ screen and (-ms-high-contrast:active) {
         text-align: center;
         padding: 40px 18px
     }
-
     .card_frount .feature_img {
         width: 100px;
         height: 116px
@@ -248,23 +207,22 @@ screen and (-ms-high-contrast:active) {
     line-height: 20px;
     margin-top: 30px;
     padding: 10px;
-   
 }
 
-.comp{ 
-  font-family: 'Ranchers', cursive;
+.comp {
+    font-family: 'Ranchers', cursive;
     letter-spacing: 3px;
     font-size: 25px;
     align-content: center;
     color: black;
 }
+
 .card_back .feature_img {
     -webkit-transform: translateZ(20px);
     transform: translateZ(20px)
 }
 
-@media (-ms-high-contrast:none),
-screen and (-ms-high-contrast:active) {
+@media (-ms-high-contrast:none), screen and (-ms-high-contrast:active) {
     .card_back .feature_img {
         max-height: 90px
     }
@@ -276,17 +234,11 @@ screen and (-ms-high-contrast:active) {
         transform: rotateY(180deg);
         background-color: #c7cfdb;
         padding: 2px 2px
-            
     }
-
     .card_back .description {
         color: #333333;
         font-size: 13px;
-        
     }
-
-  
-
     .card_back .feature_img {
         width: 80px;
         height: 90px
@@ -299,7 +251,7 @@ screen and (-ms-high-contrast:active) {
 
 .feature_card_list .item {
     margin-bottom: 20px;
-        display: flexbox;
+    display: flexbox;
 }
 
 @media (min-width:768px) {
@@ -314,7 +266,6 @@ screen and (-ms-high-contrast:active) {
         align-items: center;
         height: 100%
     }
-
     .feature_card_list .item {
         margin-bottom: 0px
     }
@@ -356,7 +307,6 @@ screen and (-ms-high-contrast:active) {
         vertical-align: top;
         display: block
     }
-
     .feature_card_wrap .content {
         transition: 0.5s ease-out;
         -webkit-transition: 0.5s ease-out;
@@ -378,7 +328,6 @@ screen and (-ms-high-contrast:active) {
         width: 100%;
         height: 100%
     }
-
     .feature_card_wrap.applyflip .content {
         transform: rotateY(180deg);
         -webkit-transform: rotateY(180deg);
@@ -386,9 +335,7 @@ screen and (-ms-high-contrast:active) {
         -o-transform: rotateY(180deg);
         -ms-transform: rotateY(180deg)
     }
-
-    .feature_card_wrap .content .cardBack,
-    .feature_card_wrap .content .cardFront {
+    .feature_card_wrap .content .cardBack, .feature_card_wrap .content .cardFront {
         backface-visibility: hidden;
         -webkit-backface-visibility: hidden;
         -moz-backface-visibility: hidden;
@@ -400,39 +347,32 @@ screen and (-ms-high-contrast:active) {
         left: 0;
         height: 100%;
         width: 100%
-            
     }
-    .card-front{
-  border-radius:5px;
-  position:relative;
-  width:100%;
-  height:100%;
-  /*hide backface*/
-  backface-visibility:hidden;
-  color:#333;
-  font-size:1.5rem;
-}
-
-    .feature_card_wrap.applyflip .content .cardFront,
-    .feature_card_wrap .content .cardFront {
+    .card-front {
+        border-radius: 5px;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        /*hide backface*/
+        backface-visibility: hidden;
+        color: #333;
+        font-size: 1.5rem;
+    }
+    .feature_card_wrap.applyflip .content .cardFront, .feature_card_wrap .content .cardFront {
         transform: rotateY(0deg);
         -webkit-transform: rotateY(0deg);
         -moz-transform: rotateY(0deg);
         -o-transform: rotateY(0deg);
         -ms-transform: rotateY(0deg)
     }
-
-    .feature_card_wrap.applyflip .content .cardBack,
-    .feature_card_wrap .content .cardBack {
+    .feature_card_wrap.applyflip .content .cardBack, .feature_card_wrap .content .cardBack {
         transform: rotateY(-180deg);
         -webkit-transform: rotateY(-180deg);
         -moz-transform: rotateY(-180deg);
         -o-transform: rotateY(-180deg);
         -ms-transform: rotateY(-180deg)
     }
-
-    .feature_card_wrap.applyflip .content .cardBack,
-    .feature_card_wrap .content .cardFront {
+    .feature_card_wrap.applyflip .content .cardBack, .feature_card_wrap .content .cardFront {
         animation: stayvisible 0.5s both;
         -webkit-animation: stayvisible 0.5s both;
         -moz-animation: stayvisible 0.5s both;
@@ -441,9 +381,7 @@ screen and (-ms-high-contrast:active) {
         -ms-transition: visibility 0s linear 0.17s;
         visibility: visible
     }
-
-    .feature_card_wrap.applyflip .content .cardFront,
-    .feature_card_wrap .content .cardBack {
+    .feature_card_wrap.applyflip .content .cardFront, .feature_card_wrap .content .cardBack {
         animation: stayvisible 0.5s both;
         -webkit-animation: stayvisible 0.5s both;
         -moz-animation: stayvisible 0.5s both;
@@ -454,13 +392,12 @@ screen and (-ms-high-contrast:active) {
     }
 }
 
-}
+
 
 @keyframes stayvisible {
     0% {
         visibility: visible
     }
-
     to {
         visibility: visible
     }
@@ -470,7 +407,6 @@ screen and (-ms-high-contrast:active) {
     0% {
         visibility: visible
     }
-
     to {
         visibility: visible
     }
@@ -480,7 +416,6 @@ screen and (-ms-high-contrast:active) {
     0% {
         visibility: visible
     }
-
     to {
         visibility: visible
     }
@@ -490,7 +425,6 @@ screen and (-ms-high-contrast:active) {
     0% {
         visibility: visible
     }
-
     to {
         visibility: visible
     }
@@ -511,9 +445,6 @@ screen and (-ms-high-contrast:active) {
     color: #fff;
     background-color: #1c2537
 }
-
-
-
 
 .card {
     position: relative;
@@ -539,7 +470,7 @@ screen and (-ms-high-contrast:active) {
     padding: 1.25rem
 }
 
-.card-body p + p {
+.card-body p+p {
     margin-top: 1rem
 }
 
@@ -556,16 +487,16 @@ screen and (-ms-high-contrast:active) {
     text-decoration: none
 }
 
-.card-link + .card-link {
+.card-link+.card-link {
     margin-left: 1.25rem
 }
 
-.card > .list-group:first-child .list-group-item:first-child {
+.card>.list-group:first-child .list-group-item:first-child {
     border-top-left-radius: .25rem;
     border-top-right-radius: .25rem
 }
 
-.card > .list-group:last-child .list-group-item:last-child {
+.card>.list-group:last-child .list-group-item:last-child {
     border-bottom-right-radius: .25rem;
     border-bottom-left-radius: .25rem
 }
@@ -641,7 +572,6 @@ screen and (-ms-high-contrast:active) {
         margin-right: -15px;
         margin-left: -15px
     }
-
     .card-deck .card {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -668,50 +598,39 @@ screen and (-ms-high-contrast:active) {
         -ms-flex-flow: row wrap;
         flex-flow: row wrap
     }
-
     .card-group .card {
         -webkit-box-flex: 1;
         -ms-flex: 1 0 0%;
         flex: 1 0 0%
     }
-
-    .card-group .card + .card {
+    .card-group .card+.card {
         margin-left: 0;
         border-left: 0
     }
-
     .card-group .card:first-child {
         border-top-right-radius: 0;
         border-bottom-right-radius: 0
     }
-
     .card-group .card:first-child .card-img-top {
         border-top-right-radius: 0
     }
-
     .card-group .card:first-child .card-img-bottom {
         border-bottom-right-radius: 0
     }
-
     .card-group .card:last-child {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0
     }
-
     .card-group .card:last-child .card-img-top {
         border-top-left-radius: 0
     }
-
     .card-group .card:last-child .card-img-bottom {
         border-bottom-left-radius: 0
     }
-
     .card-group .card:not(:first-child):not(:last-child) {
         border-radius: 0
     }
-
-    .card-group .card:not(:first-child):not(:last-child) .card-img-bottom,
-    .card-group .card:not(:first-child):not(:last-child) .card-img-top {
+    .card-group .card:not(:first-child):not(:last-child) .card-img-bottom, .card-group .card:not(:first-child):not(:last-child) .card-img-top {
         border-radius: 0
     }
 }
@@ -727,23 +646,16 @@ screen and (-ms-high-contrast:active) {
         -webkit-column-gap: 1.25rem;
         column-gap: 1.25rem
     }
-
     .card-columns .card {
         display: inline-block;
         width: 100%
     }
 }
 
-
-
-item{
+item {
     float: left;
     display: flex;
 }
-
-
-
-
 
 .clearfixx:after {
     content: '';
@@ -751,12 +663,10 @@ item{
     clear: both;
 }
 
-
 img {
     max-width: 100%;
     height: auto;
 }
-
 
 body {
     line-height: 1.6;
@@ -768,35 +678,31 @@ body {
     padding: 1em;
 }
 
-
-
 .news li {
     float: left;
     width: 10%;
     margin-right: 5px;
     padding: 1px;
-    
 }
 
 @media(max-width:768px) {
     .news li {
-        width: 500%;/*50%記得扣除768px以上的左右margin共4%*/
+        width: 500%;
+        /*50%記得扣除768px以上的左右margin共4%*/
     }
 }
 
 @media(max-width:569px) {
     .news li {
-        width: 10%;/*100%記得扣除768px以上的左右margin共4%*/
+        width: 10%;
+        /*100%記得扣除768px以上的左右margin共4%*/
     }
 }
 
-
-
-table{
-   
+table {
     width: 150px;
-margin-left:auto; 
-margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
     padding: 2px;
     margin: 2px;
     border-collapse: separate;
@@ -813,8 +719,8 @@ margin-right:auto;
     font-variant: normal;
 }
 
-.td{
-    width:400px;
+.td {
+    width: 400px;
     height: 300px;
-    overflow:hidden;
+    overflow: hidden;
 }
