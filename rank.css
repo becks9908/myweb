@@ -1,3 +1,14 @@
+
+
+table{
+border-style: groove groove groove;
+border-width:5px;
+border-bottom-color:#DEE2E6;
+border-left-color: #DEE2E6;
+border-right-color: #DEE2E6;
+    border-top-color: white;
+}
+
 :root {
   --grey-1: #343A40;
   --grey-2: #495057;
@@ -65,16 +76,30 @@ body {
 
 .list__header {
   padding: 3rem 2rem;
-  background: #f1faee;
+  background: #e56b6f;
+
   border-top-left-radius: .4rem;
   border-top-right-radius: .4rem;
+  border-style:groove groove solid;
+  border-width:5px;
+    border-left-color: #DEE2E6;
+     border-top-color: #DEE2E6;
+     border-right-color: #DEE2E6;
+    border-bottom-color:white;
+
 }
 
 .list__header h1, .list__header h5 {
   margin: 0;
   padding: 0;
+
 }
 
+h1{
+    font-size: 30px;
+    font-family: 'Ranchers';
+    letter-spacing: 5px;
+}
 .list__header h5 {
   margin-bottom: .5rem;
   text-transform: uppercase;
