@@ -34,6 +34,8 @@ html {
 .rankimg {
   width: 50px;
   height: 50px;
+margin-bottom: -20px;
+  
   position: static
 }
 
@@ -50,8 +52,10 @@ html, body {
 body {
   font-family: 'Inter UI', system-ui;
   color: var(--black);
-  background: var(--black);
+  background:#e5e5e5;
 }
+
+
 
 .list {
   width: 100%;
@@ -72,6 +76,7 @@ body {
   width: 100%;
   border-spacing: 0;
   color: var(--grey-3);
+    vertical-align: -webkit-baseline-middle;
 }
 
 .list__header {
@@ -80,7 +85,6 @@ body {
 
   border-top-left-radius: .4rem;
   border-top-right-radius: .4rem;
-  border-style:groove groove solid;
   border-width:5px;
     border-left-color: #DEE2E6;
      border-top-color: #DEE2E6;
@@ -109,6 +113,8 @@ h1{
 .list__value {
   display: block;
   font-size: 18px;
+   
+     font-family: '微軟正黑體', 'Ranchers';
 }
 
 .list__label {
